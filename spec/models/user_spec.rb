@@ -1,5 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe "users" do
+	it "should initialise user object" do
+		user = User.new(name: "jabu")
+		expect(user.name).to eq "jabu"
+	end	
+	
 end
+
